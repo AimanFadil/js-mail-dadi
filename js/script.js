@@ -1,13 +1,32 @@
 //Email validator
-let insert_email = prompt('Digita la tua mail');
+/* let insert_email = prompt('Digita la tua mail');
 
 let valid_email = ['index@gmail.com', 'html@gmail.com', 'style@gmail.com', 'css@gmail.com', 'js@gmail.com']
 
-if(insert_email = valid_email){
+
+
+if(insert_email === valid_email){
     console.log('La tua mail è valida')
 }
 else{
     console.log('La tua mail non è valida')
+} */
+
+//METODO CON FOR E IF ELSE fUORI DAL FOR 
+let insert_email = prompt('Digita la tua mail');
+let valid_email = ['index@gmail.com', 'html@gmail.com', 'style@gmail.com', 'css@gmail.com', 'js@gmail.com']
+
+let presente = false;
+for (let i = 0; i < valid_email.length; i++) {
+    if (valid_email[i] === insert_email) {
+        presente = true;
+    }
+}
+
+if (presente) {
+    console.log('La tua mail è valida');
+} else {
+    console.log('La tua mail non è valida');
 }
 
 //Dadi
